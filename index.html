@@ -7,9 +7,27 @@
   <meta name="description" content="Limitless Fitness Gym offers fitness classes, personal training, and membership options.">
   <meta name="robots" content="index, follow">
   <title>Limitless Fitness Gym</title>
+
+  <style>
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    background: #ffffff;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000000;
+  }
+
+  .skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    z-index: 1000;
+  }
+</style>
 </head>
 <body>
-<!-- add a skip link that skips to the main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 <!-- add correct heading levels -->
   <header>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
@@ -41,7 +59,7 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <main>
+  <main id="main-content">
     <section>
       About Us
       <p>Welcome to Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.</p>
