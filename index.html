@@ -81,8 +81,7 @@
         <li>Specialty Workshops: From functional training to mindfulness sessions.</li>
         <li>Check out our [Class Schedule] for times and detailed descriptions.</li>
       </ul>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
+
         <img src="images/classes.jpg" alt="Group fitness class in progress at the gym">
 
     </section>
@@ -93,8 +92,7 @@
         Ready for a change?
       </p> 
       <a href="#">Book a Free Consultation today!</a>
-<!-- add alt text where necessary -->
-<!-- add responsive images for resolution switching -->
+
         <img src="images/dumbells.jpg" alt="Set of dumbbells available for strength training">
 
     </section>
@@ -109,17 +107,43 @@
       <section id="membership-form">
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
-<!--add accessibility to the form-->
-        Full Name
-        Email Address
-        Phone Number
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        Submit
+  <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+
+  <p>
+    <label for="full-name">Full Name</label><br>
+    <input type="text" id="full-name" name="full-name" required>
+  </p>
+
+  <p>
+    <label for="email">Email Address</label><br>
+    <input type="email" id="email" name="email" required>
+  </p>
+
+  <p>
+    <label for="phone">Phone Number</label><br>
+    <input type="tel" id="phone" name="phone">
+  </p>
+
+  <p>
+    <label for="membership-type">Membership Type</label><br>
+    <select id="membership-type" name="membership-type" required>
+      <option value="">Select a Membership Option</option>
+      <option value="monthly">Monthly Membership</option>
+      <option value="annual">Annual Membership</option>
+      <option value="family">Family &amp; Group Plans</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="goals">Tell us about your fitness goals:</label><br>
+    <textarea id="goals" name="goals"></textarea>
+  </p>
+
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+
+</form>
       </section>
     </section>
   </main>
